@@ -12,11 +12,13 @@
 ~H
 # Command Line History (newest to oldest):
 :wq
-|2,0,1765194664,,"wq"
+|2,0,1765382003,,"wq"
+:q!
+|2,0,1765201631,,"q!"
+:qa
+|2,0,1765194710,,"qa"
 :w
 |2,0,1765194662,,"w"
-:q!
-|2,0,1765192601,,"q!"
 :!
 |2,0,1765192595,,"!"
 :w1
@@ -36,261 +38,314 @@
 
 # Registers:
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1765194286,""
+		kubectl logs -f $pod_details 
+|3,1,1,1,1,0,1765381475,"	kubectl logs -f $pod_details "
 "2	LINE	0
-	import psutil
-|3,0,2,1,1,0,1765191823,"import psutil"
+		kubectl descrpibe pod $Pod_deddtails   #it will descibe pod details
+|3,0,2,1,1,0,1765381475,"	kubectl descrpibe pod $Pod_deddtails   #it will descibe pod details"
 "3	LINE	0
 	
-|3,0,3,1,1,0,1765191822,""
+|3,0,3,1,1,0,1765194286,""
 "4	LINE	0
-	cpu = psutil.cpu_percent(interval=2)
-|3,0,4,1,1,0,1765191822,"cpu = psutil.cpu_percent(interval=2)"
+	import psutil
+|3,0,4,1,1,0,1765191823,"import psutil"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1765191821,""
+|3,0,5,1,1,0,1765191822,""
 "6	LINE	0
-	if cpu > 20:
-|3,0,6,1,1,0,1765191821,"if cpu > 20:"
+	cpu = psutil.cpu_percent(interval=2)
+|3,0,6,1,1,0,1765191822,"cpu = psutil.cpu_percent(interval=2)"
 "7	LINE	0
-	    print(f"⚠️ High CPU Usage: {cpu}%")
-|3,0,7,1,1,0,1765191821,"    print(f\"⚠️ High CPU Usage: {cpu}%\")"
-"8	LINE	0
-	else:
-|3,0,8,1,1,0,1765191820,"else:"
-"9	LINE	0
 	
-|3,0,9,1,1,0,1765191820,""
+|3,0,7,1,1,0,1765191821,""
+"8	LINE	0
+	if cpu > 20:
+|3,0,8,1,1,0,1765191821,"if cpu > 20:"
+"9	LINE	0
+	    print(f"⚠️ High CPU Usage: {cpu}%")
+|3,0,9,1,1,0,1765191821,"    print(f\"⚠️ High CPU Usage: {cpu}%\")"
 "-	CHAR	0
 	m
 |3,0,36,0,1,0,1765189136,"m"
 
 # File marks:
-'0  6  65  ~/disk_usage.py
-|4,48,6,65,1765194664,"~/disk_usage.py"
-'1  11  45  ~/disk_usage.py
-|4,49,11,45,1765194590,"~/disk_usage.py"
-'2  11  45  ~/disk_usage.py
-|4,50,11,45,1765194590,"~/disk_usage.py"
-'3  6  44  ~/disk_usage.py
-|4,51,6,44,1765194555,"~/disk_usage.py"
-'4  6  44  ~/disk_usage.py
-|4,52,6,44,1765194555,"~/disk_usage.py"
-'5  6  44  ~/disk_usage.py
-|4,53,6,44,1765194555,"~/disk_usage.py"
-'6  6  24  ~/disk_usage.py
-|4,54,6,24,1765194435,"~/disk_usage.py"
-'7  6  24  ~/disk_usage.py
-|4,55,6,24,1765194435,"~/disk_usage.py"
-'8  6  24  ~/disk_usage.py
-|4,56,6,24,1765194435,"~/disk_usage.py"
-'9  6  24  ~/disk_usage.py
-|4,57,6,24,1765194435,"~/disk_usage.py"
+'0  1  10  ~/a.sh
+|4,48,1,10,1765382003,"~/a.sh"
+'1  8  45  ~/checkprocess.py
+|4,49,8,45,1765201631,"~/checkprocess.py"
+'2  8  45  ~/checkprocess.py
+|4,50,8,45,1765201621,"~/checkprocess.py"
+'3  8  45  ~/checkprocess.py
+|4,51,8,45,1765201600,"~/checkprocess.py"
+'4  8  45  ~/checkprocess.py
+|4,52,8,45,1765201600,"~/checkprocess.py"
+'5  8  28  ~/checkprocess.py
+|4,53,8,28,1765201583,"~/checkprocess.py"
+'6  8  28  ~/checkprocess.py
+|4,54,8,28,1765201583,"~/checkprocess.py"
+'7  8  28  ~/checkprocess.py
+|4,55,8,28,1765201583,"~/checkprocess.py"
+'8  8  28  ~/checkprocess.py
+|4,56,8,28,1765201583,"~/checkprocess.py"
+'9  2  13  ~/checkprocess.py
+|4,57,2,13,1765201547,"~/checkprocess.py"
 
 # Jumplist (newest first):
--'  6  65  ~/disk_usage.py
-|4,39,6,65,1765194664,"~/disk_usage.py"
--'  11  45  ~/disk_usage.py
-|4,39,11,45,1765194596,"~/disk_usage.py"
--'  11  45  ~/disk_usage.py
-|4,39,11,45,1765194590,"~/disk_usage.py"
--'  6  44  ~/disk_usage.py
-|4,39,6,44,1765194561,"~/disk_usage.py"
--'  6  44  ~/disk_usage.py
-|4,39,6,44,1765194555,"~/disk_usage.py"
--'  6  24  ~/disk_usage.py
-|4,39,6,24,1765194435,"~/disk_usage.py"
--'  6  84  ~/disk_usage.py
-|4,39,6,84,1765194363,"~/disk_usage.py"
--'  9  0  ~/disk_usage.py
-|4,39,9,0,1765194335,"~/disk_usage.py"
--'  9  0  ~/disk_usage.py
-|4,39,9,0,1765194335,"~/disk_usage.py"
--'  9  0  ~/disk_usage.py
-|4,39,9,0,1765194335,"~/disk_usage.py"
--'  9  0  ~/disk_usage.py
-|4,39,9,0,1765194335,"~/disk_usage.py"
--'  9  0  ~/disk_usage.py
-|4,39,9,0,1765194335,"~/disk_usage.py"
--'  9  0  ~/disk_usage.py
-|4,39,9,0,1765194324,"~/disk_usage.py"
--'  7  0  ~/disk_usage.py
-|4,39,7,0,1765194286,"~/disk_usage.py"
--'  7  0  ~/disk_usage.py
-|4,39,7,0,1765194286,"~/disk_usage.py"
--'  7  0  ~/disk_usage.py
-|4,39,7,0,1765194286,"~/disk_usage.py"
--'  7  0  ~/disk_usage.py
-|4,39,7,0,1765194286,"~/disk_usage.py"
--'  7  0  ~/disk_usage.py
-|4,39,7,0,1765194286,"~/disk_usage.py"
--'  7  0  ~/disk_usage.py
-|4,39,7,0,1765194286,"~/disk_usage.py"
--'  11  28  ~/disk_usage.py
-|4,39,11,28,1765194283,"~/disk_usage.py"
--'  11  28  ~/disk_usage.py
-|4,39,11,28,1765194283,"~/disk_usage.py"
--'  11  28  ~/disk_usage.py
-|4,39,11,28,1765194283,"~/disk_usage.py"
--'  11  28  ~/disk_usage.py
-|4,39,11,28,1765194283,"~/disk_usage.py"
--'  8  28  ~/disk_usage.py
-|4,39,8,28,1765194276,"~/disk_usage.py"
--'  8  28  ~/disk_usage.py
-|4,39,8,28,1765194276,"~/disk_usage.py"
--'  8  28  ~/disk_usage.py
-|4,39,8,28,1765194276,"~/disk_usage.py"
--'  8  28  ~/disk_usage.py
-|4,39,8,28,1765194276,"~/disk_usage.py"
--'  8  28  ~/disk_usage.py
-|4,39,8,28,1765194276,"~/disk_usage.py"
--'  8  28  ~/disk_usage.py
-|4,39,8,28,1765194276,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194264,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194264,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194264,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194264,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194264,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194264,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194264,"~/disk_usage.py"
--'  2  0  ~/disk_usage.py
-|4,39,2,0,1765194234,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  1  0  ~/disk_usage.py
-|4,39,1,0,1765193493,"~/disk_usage.py"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
--'  7  42  ~/s1.sh
-|4,39,7,42,1765193081,"~/s1.sh"
+-'  1  10  ~/a.sh
+|4,39,1,10,1765382003,"~/a.sh"
+-'  8  45  ~/checkprocess.py
+|4,39,8,45,1765201631,"~/checkprocess.py"
+-'  8  45  ~/checkprocess.py
+|4,39,8,45,1765201631,"~/checkprocess.py"
+-'  8  45  ~/checkprocess.py
+|4,39,8,45,1765201621,"~/checkprocess.py"
+-'  8  45  ~/checkprocess.py
+|4,39,8,45,1765201621,"~/checkprocess.py"
+-'  8  45  ~/checkprocess.py
+|4,39,8,45,1765201600,"~/checkprocess.py"
+-'  8  45  ~/checkprocess.py
+|4,39,8,45,1765201600,"~/checkprocess.py"
+-'  8  28  ~/checkprocess.py
+|4,39,8,28,1765201583,"~/checkprocess.py"
+-'  8  28  ~/checkprocess.py
+|4,39,8,28,1765201583,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201555,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201547,"~/checkprocess.py"
+-'  2  13  ~/checkprocess.py
+|4,39,2,13,1765201547,"~/checkprocess.py"
+-'  2  14  ~/checkprocess.py
+|4,39,2,14,1765201534,"~/checkprocess.py"
+-'  2  14  ~/checkprocess.py
+|4,39,2,14,1765201534,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201527,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201522,"~/checkprocess.py"
+-'  6  0  ~/checkprocess.py
+|4,39,6,0,1765201522,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  14  0  ~/checkprocess.py
+|4,39,14,0,1765201499,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  13  0  ~/checkprocess.py
+|4,39,13,0,1765201474,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/checkprocess.py
+|4,39,1,0,1765201262,"~/checkprocess.py"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1765194710,"~/.git/COMMIT_EDITMSG"
 
 # History of marks within files (newest to oldest):
+
+> ~/a.sh
+	*	1765382002	0
+	"	1	10
+	^	1	11
+	.	26	17
+	+	1	34
+	+	1	20
+	+	1	22
+	+	1	27
+	+	1	0
+	+	29	0
+	+	3	35
+	+	3	78
+	+	5	25
+	+	6	25
+	+	10	34
+	+	29	7
+	+	3	92
+	+	29	34
+	+	3	2
+	+	29	29
+	+	29	0
+	+	16	32
+	+	20	42
+	+	28	0
+	+	7	0
+	+	23	49
+	+	11	20
+	+	12	0
+	+	23	49
+	+	21	37
+	+	23	41
+	+	17	41
+	+	26	17
+
+> ~/checkprocess.py
+	*	1765201627	0
+	"	8	45
+	^	8	46
+	.	8	46
+	+	5	21
+	+	8	54
+	+	11	43
+	+	13	47
+	+	14	0
+	+	5	21
+	+	2	14
+	+	8	46
+
+> ~/.git/COMMIT_EDITMSG
+	*	1765194706	0
+	"	1	0
 
 > ~/disk_usage.py
 	*	1765194662	0
@@ -337,18 +392,6 @@
 	+	1	31
 	+	1	0
 	+	12	59
-
-> ~/a.sh
-	*	1765191070	0
-	"	1	0
-	^	1	0
-	.	2	0
-	+	1	34
-	+	1	20
-	+	1	22
-	+	1	27
-	+	1	0
-	+	2	0
 
 > ~/1.sh
 	*	1765189279	0
